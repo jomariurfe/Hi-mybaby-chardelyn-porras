@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Make body at least full viewport height */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+#loveButton {
+    padding: 20px 40px;
+    font-size: 2em;
+    background-color: #ff69b4; /* Pink color */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#loveButton:hover {
+    background-color: #e65a9e; /* Darker pink on hover */
+    transform: scale(1.05);
+}
+
+#loveText {
+    margin-top: 30px;
+    font-size: 3em;
+    color: #ff69b4;
+    font-weight: bold;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease; /* Smooth transition */
+}
+
+#loveText.visible {
+    opacity: 1; /* Make visible */
+}
+
+.hidden {
+    display: none; /* A fallback/initial hide for the text */
+}
